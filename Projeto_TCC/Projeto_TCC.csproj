@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03349638-EF07-44E3-A0A1-1C78749523EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projeto_TCC</RootNamespace>
+    <AssemblyName>Projeto_TCC</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adicionar\frmCriancas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmCriancas.Designer.cs">
+      <DependentUpon>frmCriancas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmLocacao.Designer.cs">
+      <DependentUpon>frmLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmMorador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmMorador.Designer.cs">
+      <DependentUpon>frmMorador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmObras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmObras.Designer.cs">
+      <DependentUpon>frmObras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmOcorrencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmOcorrencia.Designer.cs">
+      <DependentUpon>frmOcorrencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmPets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmPets.Designer.cs">
+      <DependentUpon>frmPets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmUsuario1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmUsuario1.Designer.cs">
+      <DependentUpon>frmUsuario1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmUsuario3Cond.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmUsuario3Cond.Designer.cs">
+      <DependentUpon>frmUsuario3Cond.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adicionar\frmVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adicionar\frmVeiculos.Designer.cs">
+      <DependentUpon>frmVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar\frmCriancas2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmCriancas2.Designer.cs">
+      <DependentUpon>frmCriancas2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar\frmLocacao2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmLocacao2.Designer.cs">
+      <DependentUpon>frmLocacao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar\frmMorador2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmMorador2.Designer.cs">
+      <DependentUpon>frmMorador2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar\frmObras2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmObras2.Designer.cs">
+      <DependentUpon>frmObras2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar\frmOcorrencias2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmOcorrencias2.Designer.cs">
+      <DependentUpon>frmOcorrencias2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar\frmPets2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmPets2.Designer.cs">
+      <DependentUpon>frmPets2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar\frmUsuario3Func.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmUsuario3Func.Designer.cs">
+      <DependentUpon>frmUsuario3Func.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alterar\frmVeiculos2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alterar\frmVeiculos2.Designer.cs">
+      <DependentUpon>frmVeiculos2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BO\BABO.cs" />
+    <Compile Include="BO\FuncionariosBO.cs" />
+    <Compile Include="BO\LocacoesBO.cs" />
+    <Compile Include="BO\MoradoresBO.cs" />
+    <Compile Include="BO\ObrasBO.cs" />
+    <Compile Include="BO\OcorrenciasBO.cs" />
+    <Compile Include="BO\PetsBO.cs" />
+    <Compile Include="BO\VeiculosBO.cs" />
+    <Compile Include="Connected Services\WSCorreios\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar\frmCriancas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar\frmCriancas.Designer.cs">
+      <DependentUpon>frmCriancas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar\frmLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar\frmLocacao.Designer.cs">
+      <DependentUpon>frmLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar\frmMoradores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar\frmMoradores.Designer.cs">
+      <DependentUpon>frmMoradores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar\frmObras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar\frmObras.Designer.cs">
+      <DependentUpon>frmObras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar\frmOcorrencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar\frmOcorrencias.Designer.cs">
+      <DependentUpon>frmOcorrencias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar\frmPets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar\frmPets.Designer.cs">
+      <DependentUpon>frmPets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar\frmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar\frmUsuarios.Designer.cs">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultar\frmVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultar\frmVeiculos.Designer.cs">
+      <DependentUpon>frmVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\BADAO.cs" />
+    <Compile Include="DAO\ConexaoBanco.cs" />
+    <Compile Include="DAO\FuncionariosDAO.cs" />
+    <Compile Include="DAO\LocacoesDAO.cs" />
+    <Compile Include="DAO\MoradorDAO.cs" />
+    <Compile Include="DAO\ObrasDAO.cs" />
+    <Compile Include="DAO\OcorrenciasDAO.cs" />
+    <Compile Include="DAO\PetsDAO.cs" />
+    <Compile Include="DAO\VeiculosDAO.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddDados.Designer.cs">
+      <DependentUpon>frmAddDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltDados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltDados.Designer.cs">
+      <DependentUpon>frmAltDados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BA.cs" />
+    <Compile Include="Model\Funcionarios.cs" />
+    <Compile Include="Model\Locacoes.cs" />
+    <Compile Include="Model\Moradores.cs" />
+    <Compile Include="Model\Obras.cs" />
+    <Compile Include="Model\Ocorrencias.cs" />
+    <Compile Include="Model\Pets.cs" />
+    <Compile Include="Model\Veiculos.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ValidaCPF.cs" />
+    <EmbeddedResource Include="Adicionar\frmCriancas.resx">
+      <DependentUpon>frmCriancas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmLocacao.resx">
+      <DependentUpon>frmLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmMorador.resx">
+      <DependentUpon>frmMorador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmObras.resx">
+      <DependentUpon>frmObras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmOcorrencia.resx">
+      <DependentUpon>frmOcorrencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmPets.resx">
+      <DependentUpon>frmPets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmUsuario1.resx">
+      <DependentUpon>frmUsuario1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmUsuario3Cond.resx">
+      <DependentUpon>frmUsuario3Cond.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adicionar\frmVeiculos.resx">
+      <DependentUpon>frmVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmCriancas2.resx">
+      <DependentUpon>frmCriancas2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmLocacao2.resx">
+      <DependentUpon>frmLocacao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmMorador2.resx">
+      <DependentUpon>frmMorador2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmObras2.resx">
+      <DependentUpon>frmObras2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmOcorrencias2.resx">
+      <DependentUpon>frmOcorrencias2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmPets2.resx">
+      <DependentUpon>frmPets2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmUsuario3Func.resx">
+      <DependentUpon>frmUsuario3Func.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alterar\frmVeiculos2.resx">
+      <DependentUpon>frmVeiculos2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar\frmCriancas.resx">
+      <DependentUpon>frmCriancas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar\frmLocacao.resx">
+      <DependentUpon>frmLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar\frmMoradores.resx">
+      <DependentUpon>frmMoradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar\frmObras.resx">
+      <DependentUpon>frmObras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar\frmOcorrencias.resx">
+      <DependentUpon>frmOcorrencias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar\frmPets.resx">
+      <DependentUpon>frmPets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultar\frmVeiculos.resx">
+      <DependentUpon>frmVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddDados.resx">
+      <DependentUpon>frmAddDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltDados.resx">
+      <DependentUpon>frmAltDados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Connected Services\WSCorreios\AtendeClienteService.wsdl" />
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.atualizaPagamentoNaEntregaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.atualizaRemessaAgrupadaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.bloquearObjetoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaContratoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaDataAtualResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaPagamentoEntregaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaServicosAdicionaisAtivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaServicosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaServicosValorDeclaradoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaServicosXServicosAdicionaisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.buscaTarifaValeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.calculaTarifaServicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.cancelarObjetoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.cancelarPedidoScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.clienteERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.consultaCEPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.consultaSROResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.consultaSRO_NEWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.contratoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.embalagemLRSMaster.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.enderecoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.fechaPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.fechaPlpVariosServicosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.geraDigitoVerificadorEtiquetasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.getStatusCartaoPostagemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.getStatusPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.integrarUsuarioScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.obterClienteAtualizacaoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.obterEmbalagemLRSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.retornoCancelamento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.servicoAdicionalXML.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.servicoERP.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.solicitaEtiquetasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.solicitaPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.solicitarPostagemScolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.solicitaXmlPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.statusCartao.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.statusPlp.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.valePostal.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.validaEtiquetaPLPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.validaPlpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.validarPostagemReversaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.validarPostagemSimultaneaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.verificaDisponibilidadeServicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSCorreios\Projeto_TCC.WSCorreios.VerificaSeTodosObjetosCanceladosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\WSCorreios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSCorreios\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSCorreios\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\WSCorreios\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
